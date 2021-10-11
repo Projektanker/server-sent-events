@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.333">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(ProjectName.EndsWith(`Tests`))' == 'true'">
+    <PackageReference Include="FluentAssertions" Version="6.1.0" />
+    <PackageReference Include="GitHubActionsTestLogger" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(ProjectName.EndsWith(`.UnitTests`))' == 'true'">
+    <PackageReference Include="AutoFixture" Version="4.17.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+</Project>
