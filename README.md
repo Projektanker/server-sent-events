@@ -1,7 +1,7 @@
 # Server-Sent Events
 Server-Sent Events implementation for C#
 
-[![🚀 CI / CD](https://github.com/Projektanker/server-sent-events/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Projektanker/server-sent-events/actions/workflows/ci-cd.yml)
+[![CI / CD](https://github.com/Projektanker/server-sent-events/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Projektanker/server-sent-events/actions/workflows/ci-cd.yml)
 
 ## NuGet
 | Name | Description | Version |
