@@ -3,6 +3,12 @@
     <Nullable>enable</Nullable>
     <AnalysisMode>AllEnabledByDefault</AnalysisMode>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <Authors>Sebastian Rumohr</Authors>
+    <Company>Projektanker GmbH</Company>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Projektanker/server-sent-events</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>server-sent-events sse</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
