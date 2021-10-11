@@ -15,6 +15,7 @@ using Xunit;
 namespace Projektanker.ServerSentEvents.UnitTests
 {
     [SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "Only for unit test.")]
+    [SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1501:Statement should not be on a single line", Justification = "Only for unit test.")]
     public class EventSourceTests
     {
         private readonly TaskCompletionSource _tcs = new();
@@ -129,7 +130,6 @@ namespace Projektanker.ServerSentEvents.UnitTests
 
             connection.InSequence(seq)
                 .Setup(x => x(HttpCompletionOption.ResponseHeadersRead, It.Is<CancellationToken>(arg => arg != default)))
-                .Callback(_tcs.SetResult)
                 .ReturnsAsync(CreateHttpResponseMessage("\n"));
 
             int onOpenCount = 0;
